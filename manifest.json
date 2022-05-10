@@ -1,0 +1,30 @@
+{
+    "name": "Image Text Extractor",
+    "description": "An OCR to extract text from image files",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "activeTab",
+        "clipboardWrite",
+        "clipboardRead"
+    ],
+    "author": "Mann Kumar Jain",
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["./src/index.js"]
+        }
+      ],
+      "content_security_policy": {
+        "base-uri": "'none'",
+        "object-src": "'self'",
+        "script-src": [
+        "'self'",
+        "https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"
+      ]
+      },
+    "action": {
+    "default_popup": "./src/index.html"
+    }
+}
