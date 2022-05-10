@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');</style>
+    <link rel="stylesheet" href="./index.css">
+    <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+    <title>Image Text Extractor</title>
+</head>
+<body>
+    <div class="navbar">
+        <subheading>IMAGE TEXT EXTRACTOR</subheading>
+        <img id="cut_icon" href="#" src="../Assets/cut.svg" align="right">
+    </div>
+    <div class="takeinput">
+        <label for="Language" class="lang">Choose Language:</label>
+        <select name="Language" id="langsel">
+            <option value='eng'selected> English            </option>
+            <option value='hin'     > Hindi                 </option>
+            <option value='ara'     > Arabic                </option>
+            <option value='ben'     > Bengali               </option>
+            <option value='chi_sim' > Chinese               </option>
+            <option value='chi_tra' > Traditional Chinese   </option>
+            <option value='deu'     > German                </option>
+            <option value='ell'     > Greek                 </option>
+            <option value='fra'     > French                </option>
+            <option value='grc'     > Ancient Greek         </option>
+            <option value='hun'     > Hungarian             </option>
+            <option value='ind'     > Indonesian            </option>
+            <option value='ita'     > Italian               </option>
+            <option value='jpn'     > Japanese              </option>
+            <option value='kan'     > Kannada               </option>
+            <option value='kor'     > Korean                </option>
+            <option value='mal'     > Malayalam             </option>
+            <option value='nld'     > Dutch                 </option>
+            <option value='nor'     > Norwegian             </option>
+            <option value='pol'     > Polish                </option>
+            <option value='por'     > Portuguese            </option>
+            <option value='ron'     > Romanian              </option>
+            <option value='rus'     > Russian               </option>
+            <option value='slk'     > Slovakian             </option>
+            <option value='slv'     > Slovenian             </option>
+            <option value='spa'     > Spanish               </option>
+            <option value='srp'     > Serbian (Latin)       </option>
+            <option value='swe'     > Swedish               </option>
+            <option value='tam'     > Tamil                 </option>
+            <option value='tel'     > Telugu                </option>
+            <option value='tgl'     > Tagalog               </option>
+            <option value='tha'     > Thai                  </option>
+            <option value='tur'     > Turkish               </option>
+            <option value='ukr'     > Ukrainian             </option>
+            <option value='vie'     > Vietnamese            </option>
+        </select>
+    </div>
+    <label for="file" class="upload">Upload an image file:</label>
+    <input type="file" name="file" id="file-1" class="inputfile" accept="image/*">
+    <div id="log">
+        <span id="startPre">  
+            <button type="button" id="start">Click here to recognize text</button>
+        </span>
+    </div>
+    <div class="image"></div>
+    <p class="subhead">The text from the image is as under:</p>
+    <div id="text_area">
+        <img id="clear_icon" href="#" src="../Assets/trash-alt.svg" align = "right">
+        <img id="copy_icon" href="#" src="../Assets/copy.svg" align = "right">
+        <p id="text"><i> No Image Selected</i></p>
+    </div>
+</body>
+    <script type="module" src="./index.js"></script>
+</html>

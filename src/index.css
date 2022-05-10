@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 400px;
+}
+
+.navbar{
+    height: 25px;
+    background: lightgrey;
+    margin-bottom: 5px;
+}
+
+subheading{
+    margin-bottom: 2px;
+    margin-left: 5px;
+    font-family: 'Anton', sans-serif;
+}
+
+
+#langsel, #log{
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.lang,.upload{
+    margin-left: 5px;
+}
+#start{
+    margin-top: 10px;
+}
+
+#selected-image{
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+.subhead{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#text_area{
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 50%;
+    height: 40%;
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+#copy_icon, #clear_icon, #cut_icon{
+    max-width: 20px;
+    max-height: 15px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+#cut_icon{
+    top: 15%;
+    max-height: 20px;
+}
